@@ -7,6 +7,7 @@ public class Factorizer {
       ArrayList<Integer> primeReturns = new ArrayList<Integer>();
 
       int counter = 1;
+    
       while(counter < num/2){
         counter++;
         if(num % counter == 0){
