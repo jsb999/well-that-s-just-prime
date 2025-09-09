@@ -29,4 +29,22 @@ public class Factorizer {
   public boolean isComposite(int num){
     return !isPrime(num);
   }
+
+  public String reduce(int numerator, int denominator) {
+    // Find the greatest common divisor (GCD) using Euclidean algorithm
+    int gcd = findGCD(numerator, denominator);
+    
+    // Reduce the fraction by dividing both numerator and denominator by GCD
+    int reducedNumerator = numerator / gcd;
+    int reducedDenominator = denominator / gcd;
+    
+    return reducedNumerator + "/" + reducedDenominator;
+  }
+  
+  private int findGCD(int a, int b) {
+    if (b == 0) {
+      return a;
+    }
+    return findGCD(b, a % b);
+  }
 }
