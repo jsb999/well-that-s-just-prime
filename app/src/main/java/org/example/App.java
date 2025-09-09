@@ -27,13 +27,5 @@ public class App {
     System.out.println("43: " + prime.isComposite(43));
     System.out.println("10: " + prime.isComposite(10));
     System.out.println("100: " + prime.isComposite(100));
-
-    System.out.println("\nReduce these fractions:");
-    System.out.println("1/1: " + prime.reduce(1, 1));
-    System.out.println("1/2: " + prime.reduce(1, 2));
-    System.out.println("1/3: " + prime.reduce(1, 3));
-    System.out.println("2/3: " + prime.reduce(2, 3));
-    System.out.println("2/4: " + prime.reduce(2, 4));
-    
   }
 }
