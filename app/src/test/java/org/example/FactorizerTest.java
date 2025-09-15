@@ -6,9 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 
 class FactorizerTest {
+  Factorizer factorizer;
   @BeforeEach
   void setUp(){
-    Factorizer factorizer = new Factorizer();
+    factorizer = new Factorizer();
   }
   
   @Test
